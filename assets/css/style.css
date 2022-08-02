@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body { height: 100%; width: 100%; margin: 0; }
+  
+  body {
+    background-color: #000000;
+  }
+
+  .fadeIn {
+    animation: fadeIn ease 1s; /* Für eine Sekunde einblenden */
+    animation-iteration-count: 1; /* Nur einmal soll diese Animation abgespielt werden */
+    animation-fill-mode: forwards; /* Definiert den Zustand einer Animation vor und nach deren Ablauf */
+  }
+
+  @keyframes fadeIn { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+  }
+  
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-header {
+    margin-bottom: 6%;
+  }
+
+  #logo-text {
+    font-family: aktiv-grotesk-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    padding-right: 3rem;
+    border-bottom: 0px;
+  
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  #logo-text:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition-duration: 300ms;
+  }
+
+  .home-bio {
+    font-family: 'Inter';
+    font-size: 1em;
+    font-weight: 200;
+    max-width: 280px;
+    line-height: 140%;
+    color: white;
+  }
+
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 96%;
+    display: inline-block;
+  }
+
+  .nav-container {
+    text-align: right;
+  }
+
+  .nav-link {
+    font-family: 'Inter';
+    font-size: 1em;
+    font-weight: 300 !important;
+    color: #ffffff !important;
+    opacity: 0.5;
+    text-decoration: none;
+    transition-duration: 300ms;
+    border-bottom: 0px !important;
+  }
+  
+  .nav-link:hover {
+    color: rgb(255, 255, 255) !important;
+    opacity: 1 !important;
+    text-decoration: none;
+  }
+
+  .nav-current {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+  }
+
+  .right-spacing {
+    margin-right: 3rem;
+  }
